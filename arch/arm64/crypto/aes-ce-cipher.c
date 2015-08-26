@@ -237,7 +237,11 @@ EXPORT_SYMBOL(ce_aes_setkey);
 static struct crypto_alg aes_alg = {
 	.cra_name		= "aes",
 	.cra_driver_name	= "aes-ce",
+<<<<<<< HEAD
 	.cra_priority		= 250,
+=======
+	.cra_priority		= 299,
+>>>>>>> 76c95e5... arm64: crypto: Change priority of arm64 aes cipher.
 	.cra_flags		= CRYPTO_ALG_TYPE_CIPHER,
 	.cra_blocksize		= AES_BLOCK_SIZE,
 	.cra_ctxsize		= sizeof(struct crypto_aes_ctx),
